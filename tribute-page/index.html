@@ -1,31 +1,92 @@
 <style>
-	.d1 {
-		background: LightSkyBlue;
+	body {
+		background: rgb(238, 238, 238);
 	}
-	.d2 {
-		background: LightSalmon;
+	#main {
+		font-size: 16px;
+		width: 100%;
+
+		display: grid;
+		font-family: "roboto";
+		margin: auto;
 	}
-	.d3 {
-		background: PaleTurquoise;
-	}
-	.d4 {
-		background: LightPink;
-	}
-	.d5 {
-		background: PaleGreen;
+	#container {
+		grid-template-columns: 60% 40%;
+		width: 1040px;
+		margin: auto;
 	}
 
-	.container {
-		font-size: 40px;
-		width: 100%;
-		background: LightGray;
+	#menu {
+		text-align: center;
+	}
+	#title {
+		color: rgb(29, 29, 29);
+		max-width: 100%;
+		margin: auto;
+		padding: 2%;
+		background-color: rgb(252, 252, 252);
+	}
+	.title-header {
+		font-size: 24px;
+	}
+	.title-underheader {
+		font-size: 16px;
+	}
+
+	#footer {
+		background: PaleTurquoise;
+
 		display: grid;
+	}
+	#left-side {
+		background: LightPink;
+		max-width: 60%;
+		float: left;
+	}
+	#right-side {
+		background: PaleGreen;
+		max-width: 40%;
+		width: 40%;
+		float: left;
+	}
+
+	@media only screen and (max-width: 768px) {
+		#container {
+			margin: auto;
+		}
+		#left-side {
+			background: rgb(83, 7, 134);
+			max-width: 100%;
+			float: left;
+		}
+		#right-side {
+			background: rgb(24, 14, 116);
+			max-width: 100%;
+			width: 100%;
+			float: left;
+		}
+	}
+	#image {
+		max-width: 100%;
+		height: auto;
 	}
 </style>
 
-<div class="container">
-	<div class="d1">1</div>
-	<div class="d2">2</div>
-	<div class="d3">3</div>
-	<div class="d4">4</div>
+<div id="main">
+	<div id="menu">
+		<div id="title">
+			<h4 class="title-header">Dr. Norman Borlaug</h4>
+			<p class="title-underheader">The man who saved a bilion lives</p>
+		</div>
+	</div>
+	<div id="container">
+		<div id="left-side">
+			<div id="img-div">
+				<img id="image" src="image.jpg" />
+				<caption id="img-caption"></caption>
+			</div>
+		</div>
+		<div id="right-side">4</div>
+	</div>
+	<div id="footer">stopka</div>
 </div>
