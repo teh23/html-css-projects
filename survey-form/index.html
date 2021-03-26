@@ -1,0 +1,165 @@
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		font-family: Roboto;
+		background-color: #5894da; 
+     
+
+		/* background-image: linear-gradient(90deg, #e6dada 0%, #8a6666 100%); */
+	}
+
+	#main {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	#survey {
+		margin: 0;
+
+		display: grid;
+		margin: auto;
+		grid-column: 1;
+		grid-template-rows: 2;
+		width: 600px;
+		text-align: center;
+        
+	}
+
+
+	#survey-form {
+		display: grid;
+        
+		grid-template-columns: 1;
+		grid-template-rows: 51;
+		padding: 5%;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, .5);
+		text-align: left;
+		/* background: rgba(36, 36, 36, 0.1); */
+      
+        border-radius: 1%;
+	}
+
+	.group {
+        font-family:"Inter", sans-serif;
+		display: grid;
+		grid-template-columns: 1;
+		grid-template-rows: 2;
+		position: relative;
+		margin: 2% 0 2% 0;
+		float: left;
+	}
+
+	input {
+		margin-top: 2%;
+        border: 0px solid;
+        height: 25px;
+        font-family: Roboto;
+	}
+
+    #title{
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        font-size: 42px;
+    
+
+    }
+    #description{
+        font-style: italic;
+        color:rgba(29, 29, 29, 0.8)
+    }
+    #submit{
+        border-radius: 1px;
+        font-family: consolas;
+        font-size: 16px;
+        border: 0px solid;
+        height: 35px;
+        color:rgba(255, 255, 255, 1);
+        background: rgb(38, 172, 11);
+        font-weight: bold;
+    }
+
+
+
+</style>
+<div id="main">
+	<div id="survey">
+		<div id="top">
+			<h1 id="title">My exmaple of survey</h1>
+			<p id="description">So.. what do u think about this?    </p>
+		</div>
+		<div id="content">
+			<form id="survey-form">
+				<div class="group">
+					<label for="name" id="name-label">First name:</label>
+					<input
+						type="text"
+						placeholder="Np. Jan Kowalski"
+						id="name"
+						name="name"
+					/><br /><br />
+				</div>
+				<div class="group">
+					<label for="email" id="email-label">Email:</label>
+					<input
+						type="email"
+						placeholder="Np. kowalskijan@gmail.com"
+						id="email"
+						name="email"
+					/><br /><br />
+				</div>
+				<div class="group">
+					<label for="age" id="number-label">Age</label>
+					<input
+						type="number"
+						min="0"
+						max="100"
+						id="age"
+						name="age"
+						placeholder="Np. 10"
+					/>
+				</div>
+				<div class="group">
+					<label for="person">Who you are?</label>
+					<select id="dropdown" name="person">
+						<option value="HR" >HR</option>
+						<option value="devloper">Developer</option>
+						<option value="random">Random</option>
+                
+					</select>
+				</div>
+				<div class="group">
+					Do you like this survey?
+					<label for="like">
+						<input type="radio" name="like" value="yes" />Definitely
+					</label>
+					<label for="like">
+						<input type="radio" name="like" value="Maby" />Mayby
+					</label>
+					<label for="like">
+						<input type="radio" name="like" value="Nope" />No
+					</label>
+				</div>
+				<div class="group">
+					What needs to be improved?
+					<label for="help">
+						<input type="checkbox" value="code"/>Code
+					</label>
+					<label for="help">
+						<input type="checkbox" name="help" value="design">Design</input>
+					</label>
+				</div>
+				<div class="group">
+					<label for="opinion">Your opinion</label>
+					<textarea name="opinion"></textarea>
+				</div>
+				<button type="submit" id="submit">WYŚLIJ</button>
+			</form>
+		</div>
+	</div>
+</div>
