@@ -1,0 +1,60 @@
+
+
+/*! `Custom` Bootstrap 4 theme */
+
+$enable-grid-classes:true
+$primary: #583636
+$secondary:#008AC6
+$success:#CCF6FF
+$danger:#F67280
+$info:#743600
+$warning:#FF7E67
+$light:#FAFAFA
+$dark:#4e4e4e
+
+$spacer:1rem
+
+
+
+.transparent
+  background-color: rgba(0,0,0,0.5)
+.nav-bar-height
+  height: 5rem
+.hero
+  min-height: 100vh
+  //background-image: linear-gradient(to right top, #2982A8, #00A0B7, #00BDB3, #53D69F, #A5EB84, #F9F871)
+  background: rgba(0,0,0,1)  url("1.jpg")
+  background-repeat: no-repeat,no-repeat /* Do not repeat the image */
+  background-size:  contain
+  background-position: right center, right center
+
+
+.vertical-center
+  min-height: 70vh
+  margin-top: auto
+  margin-bottom: auto
+
+.my-brand
+  margin-bottom: 0.5rem
+  font-weight: 500
+  line-height: 1.2
+  font-size: 1.75rem
+
+.navbar-nav
+  white-space: nowrap
+
+.active-my
+  @extend .active
+  border-bottom: 3px solid $primary
+
+.my-header
+  margin-bottom: 0.5rem
+  font-weight: 500
+  line-height: 1.2
+  font-size: 4rem
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap"
