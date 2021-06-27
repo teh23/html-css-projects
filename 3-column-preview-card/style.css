@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --grey: hsl(0, 0%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2em;
+    color: white;
+}
+p {
+    line-height: 1.6;
+    color: var(--white);
+}
+input[type="button"] {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 3em;
+}
+
+.item {
+    margin-bottom: 2em;
+}
+
+.sedan {
+    background-color: var(--orange);
+}
+.suv {
+    background-color: var(--dark-cyan);
+}
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.sedan input[type="button"] {
+    color: var(--orange);
+}
+.suv input[type="button"] {
+    color: var(--dark-cyan);
+}
+.luxury input[type="button"] {
+    color: var(--very-dark-cyan);
+}
