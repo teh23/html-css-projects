@@ -24,21 +24,35 @@ p {
     color: var(--white);
 }
 input[type="button"] {
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 20px;
     border: none;
     background-color: white;
 }
-
-.container {
-    display: flex;
-    flex-flow: column;
-    margin: 10px auto;
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 80%;
-    height: 100%;
+.button:active {
+    padding: 14px 24px;
+    border: 1px solid white;
+    background-color: inherit;
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        flex-flow: row;
+        margin: 10%;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 1439px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        margin: 10px 10%;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 }
 
 .box {
@@ -66,9 +80,19 @@ input[type="button"] {
 .sedan input[type="button"] {
     color: var(--orange);
 }
+.sedan input[type="button"]:active {
+    color: white;
+}
+
 .suv input[type="button"] {
     color: var(--dark-cyan);
 }
+.suv input[type="button"]:active {
+    color: white;
+}
 .luxury input[type="button"] {
     color: var(--very-dark-cyan);
+}
+.luxury input[type="button"]:active {
+    color: white;
 }
