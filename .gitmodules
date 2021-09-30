@@ -1,0 +1,18 @@
+[submodule "sunnyside-agency-landingpage"]
+	path = sunnyside-agency-landingpage
+	url = https://github.com/teh23/sunnyside-agency-landingpage.git
+[submodule "easybank-landingpage"]
+	path = easybank-landingpage
+	url = https://github.com/teh23/easybank-landingpage.git
+[submodule "fylo-two-column-landingpage"]
+	path = fylo-two-column-landingpage
+	url = https://github.com/teh23/fylo-two-column-landing-page.git
+[submodule "popup-modal-js"]
+	path = popup-modal-js
+	url = https://github.com/teh23/popup-modal-js.git
+[submodule "randombackground-js"]
+	path = randombackground-js
+	url = https://github.com/teh23/randombackground-js.git
+[submodule "tictactoe-js"]
+	path = tictactoe-js
+	url = https://github.com/teh23/tictactoe-js.git
